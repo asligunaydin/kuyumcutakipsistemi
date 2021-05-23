@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_tumu"
+            android:icon="@drawable/ic_action_users"
+            android:title="@string/tumu"/>
+        <item
+            android:id="@+id/nav_borclular"
+            android:icon="@drawable/ic_action_borc"
+            android:title="@string/borclular"/>
+        <item
+            android:id="@+id/nav_emanetler"
+            android:icon="@drawable/ic_action_emanet"
+            android:title="@string/emanetler"/>
+
+    </group>
+</menu>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="282dp"
+        android:layout_height="212dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kuyumcu" />
+
+    <EditText
+        android:id="@+id/editTextUser"
+        android:layout_width="383dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="28dp"
+        android:background="@color/background"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:ems="10"
+        android:hint=" Username"
+        android:inputType="textPersonName"
+        android:textColor="@color/white2"
+        android:textColorHint="@color/white2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPass"
+        android:layout_width="383dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:background="@color/background"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:textColor="@color/white2"
+        android:textColorHint="@color/white2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUser" />
+
+    <Button
+        android:id="@+id/btnGiris"
+        android:layout_width="383dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="68dp"
+        android:background="@color/background"
+        android:backgroundTint="@color/background2"
+        android:text="GİRİŞ"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/background2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPass"
+        app:layout_constraintVertical_bias="0.985" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

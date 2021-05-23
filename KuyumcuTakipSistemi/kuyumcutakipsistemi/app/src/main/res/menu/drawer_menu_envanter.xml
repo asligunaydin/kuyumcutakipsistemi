@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_kategori"
+            android:icon="@drawable/ic_action_kategori"
+            android:title="@string/kategoriler"/>
+        <item
+            android:id="@+id/nav_marka"
+            android:icon="@drawable/ic_action_category"
+            android:title="@string/markalar"/>
+        <item
+            android:id="@+id/nav_altin"
+            android:icon="@drawable/ic_action_gold"
+            android:title="@string/altin"/>
+        <item
+            android:id="@+id/nav_ziynet"
+            android:icon="@drawable/ic_action_sonsuzluk"
+            android:title="@string/ziynet"/>
+        <item
+            android:id="@+id/nav_doviz"
+            android:icon="@drawable/ic_action_doviz"
+            android:title="@string/doviz"/>
+
+        <item
+            android:id="@+id/nav_pirlanta"
+            android:icon="@drawable/ic_action_eco"
+            android:title="@string/pirlanta"/>
+        <item
+            android:id="@+id/nav_saat"
+            android:icon="@drawable/ic_action_star"
+            android:title="@string/saat"/>
+    </group>
+
+
+
+</menu>

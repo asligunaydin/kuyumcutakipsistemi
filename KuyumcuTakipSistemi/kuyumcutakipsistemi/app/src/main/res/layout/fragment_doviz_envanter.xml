@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentDovizEnvanter">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background2"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textBaslik2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="DOVİZ"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="">
+
+            <TextView
+                android:id="@+id/textSutun1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="Ürün"
+
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textSutun2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="Para Birimi"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textSutun3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="Maliyet Fiyatı"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textSutun4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="Alış Milyem"
+
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textSutun5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="Satış Milyem"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/textSutun6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="Stok"
+                android:textColor="@color/white" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <ListView
+                android:id="@+id/listView_Doviz"
+                android:layout_width="730dp"
+                android:layout_height="match_parent"
+                android:background="@color/background3"
+                android:backgroundTint="@color/white"
+                />
+
+        </TableRow>
+
+
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentPirlantaEnvanter">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background2"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textBaslik2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="PIRLANTA LİSTESİ"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/background"
+            android:gravity="center_vertical">
+            <EditText
+                android:id="@+id/editText_pirlanta_ara"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="10"
+                android:background="@color/background3"
+                android:backgroundTint="@color/background3"
+                android:drawableRight="@drawable/ic_action_search"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_pirlanta_ara"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:layout_weight="10"/>
+
+            <Button
+                android:id="@+id/btn_pirlanta_sil"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:layout_weight="10"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="">
+
+            <TextView
+                android:id="@+id/textSutun1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="Ürün"
+
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textSutun2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="Para Birimi"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textSutun3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="Maliyet Fiyatı"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textSutun4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="Has Maliyeti"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textSutun5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="Alış Fiyatı"
+
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textSutun6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="Satış Fiyatı"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textSutun7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="Stok"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textSutun8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="Barkod"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textSutun9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="Carat"
+
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textSutun10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="Renk"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textSutun11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="Berraklık"
+                android:textColor="@color/white" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <ListView
+                android:id="@+id/listView_Pirlanta"
+                android:layout_width="730dp"
+                android:layout_height="match_parent"
+
+                />
+
+        </TableRow>
+
+
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
